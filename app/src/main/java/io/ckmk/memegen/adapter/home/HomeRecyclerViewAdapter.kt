@@ -1,7 +1,6 @@
-package io.ckmk.memegen.view.home
+package io.ckmk.memegen.adapter.home
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView

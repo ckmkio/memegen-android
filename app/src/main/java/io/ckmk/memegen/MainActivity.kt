@@ -1,17 +1,15 @@
 package io.ckmk.memegen
 
 import android.os.Bundle
-import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
 import io.ckmk.memegen.databinding.ActivityMainBinding
-import io.ckmk.memegen.view.home.HomeRecyclerViewAdapter
+import io.ckmk.memegen.adapter.home.HomeRecyclerViewAdapter
 import io.ckmk.memegen.viewmodel.home.HomeViewModel
 
 @AndroidEntryPoint
