@@ -1,5 +1,7 @@
 package io.ckmk.memegen.network
 
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,8 +21,12 @@ class RetrofitModule {
     fun providesRetrofit(): Retrofit {
         val okHttpBuilder = OkHttpClient.Builder()
 
+        val moshi = Moshi.Builder()
+            .add(KotlinJsonAdapterFactory())
+            .build()
+
         return Retrofit.Builder().baseUrl(Config.API_BASE_URL)
-            .addConverterFactory(MoshiConverterFactory.create())
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
             .client(okHttpBuilder.build())
             .build()
     }
