@@ -55,7 +55,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.multidex)
     implementation(libs.androidx.recyclerview)
-    implementation(libs.androidx.room)
+    implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.guava)
     implementation(libs.androidx.room.ktx)
