@@ -1,7 +1,6 @@
 package io.ckmk.memegen.network
 
 import io.ckmk.memegen.model.GetTrendingGifsResponse
-import io.ckmk.memegen.model.Gif
 import retrofit2.http.GET
 import retrofit2.http.Query
 

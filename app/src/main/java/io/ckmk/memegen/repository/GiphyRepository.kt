@@ -2,7 +2,6 @@ package io.ckmk.memegen.repository
 
 import io.ckmk.memegen.app.Config
 import io.ckmk.memegen.model.GetTrendingGifsResponse
-import io.ckmk.memegen.model.Gif
 import io.ckmk.memegen.network.RetrofitService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

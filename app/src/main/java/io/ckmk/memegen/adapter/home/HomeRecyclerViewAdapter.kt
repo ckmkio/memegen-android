@@ -28,7 +28,7 @@ class HomeRecyclerViewAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         gifs?.get(position)?.let {
             holder.textView.text = it.title
-            Glide.with(context).asGif().load("https://media.giphy.com/media/${it.id}/giphy.gif").into(holder.imageView)
+            Glide.with(context).asGif().load("https://media.giphy.com/media/${it.giphyId}/giphy.gif").into(holder.imageView)
         }
     }
 
